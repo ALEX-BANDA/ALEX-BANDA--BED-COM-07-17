@@ -1,0 +1,152 @@
+.music-container{
+    width: 350px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+.music-img{
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('img/Px.jpg');
+    color: #fff;
+}
+.music-header{
+    border-bottom: 1px solid #555;
+    height: 50px;
+}
+.music-header .fa-angle-left{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.music-header .fa-list-ul{
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.music-header .title{
+    width: 250px;
+    height: 25px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 10px;
+}
+.inner-img{
+    padding-top: 60px;
+    
+}
+.inner-img img{
+    position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 90%;
+    animation: rotate 2s linear infinite;
+    margin-bottom: 40px;
+}
+@keyframes rotate{
+    100%{transform: rotate(360deg);}
+}
+marquee{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
+.music-control{
+    background-image: linear-gradient(#d40000,rgb(48, 12, 63));
+}
+.music-bar .progress{
+    height: 7px; 
+    border-radius:  0;
+    background-color: #000;
+}
+.music-bar .progress-bar{
+    width: 0%;
+    background-color: rgba(214, 213, 144, 0.801);
+    animation: width  4s infinite;
+}
+@keyframes width{
+    100%{width: 100%;}
+}
+.social-bar{
+    border-bottom: 2px solid #0715e0;
+    height: 50px;
+}
+.social-bar .fa{
+    padding: 15px 26px;
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+}
+.control-bar{
+    height: 100px;
+    padding-top: 15px;
+    width: 100%;
+}
+.control-bar .fa{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.control-bar .fa-play{
+    width: 60px;
+    height: 60px;
+    padding-top: 25px;
+    color: rgb(251, 255, 10);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 30px;
+}
+.control-bar .fa-step-backward, .fa-step-forward{
+    width: 30px;
+    height: 30px;
+    padding-top: 12px;
+    color: rgb(23, 253, 15);
+    background-color: #0615f3;
+    border-radius: 50%;
+    font-size: 15px;
+}
+control-bar .fa-retweet, .control-bar  fa-random{
+    padding-top: 15px;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+}
+.user-menu{
+    height: 80px;
+    font-family: sans-serif;
+    background: #000;
+    line-height: 25px;
+}
+.user-menu ul{
+    display: inline-block;
+   padding: 15px 0;
+   list-style-type: none;
+}
+.user-menu ul li{
+    display: inline-block;
+    padding: 0px 25px;
+    color: rgb(6, 3, 167);
+ }
+ .user-menu ul li a{
+  display: inline-block; 
+  color: #999;
+  font-size: 10px;
+  text-decoration: none;
+ }
+ .user-menu .fa{
+     color: #999;
+     font-size: 22px;
+ }
+.active .fa{
+    color: #fff;
+}
+.active a p{
+    color: #fff;
+}
